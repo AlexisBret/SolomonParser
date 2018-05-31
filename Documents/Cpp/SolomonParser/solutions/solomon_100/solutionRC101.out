@@ -1,0 +1,394 @@
+Solution = {
+
+CostFeas       = 91383;
+PathFlowEpsInt = 1e-05;
+
+Networks = {
+  // NetworkName;
+
+  net_;
+}
+
+Resources = {
+  // ResourceName;
+
+  __rTime;
+  __rLoad;
+}
+
+Columns = {
+  // ColumnName Cost Value ReducedCost AtLowerBound AtUpperBound;
+
+  cCounterT1_ 90000 9 -1e+20 0 0;
+}
+
+Rows = {
+  // RowName DualVariableValue;
+
+  r_Client_1 9.8522e+18;
+  r_Client_3 4.9959e+18;
+  r_Client_4 1.97264e+19;
+  r_Client_6 9.81622e+18;
+  r_Client_8 5.02744e+18;
+  r_Client_9 1.04087e+19;
+  r_Client_11 1.98273e+19;
+  r_Client_12 9.90217e+18;
+  r_Client_15 9.90217e+18;
+  r_Client_16 1.00355e+19;
+  r_Client_46 5.76008e+18;
+  r_Client_52 1.83382e+18;
+  r_Client_60 8.18383e+18;
+  r_Client_66 8.37485e+18;
+  r_Client_69 1.30147e+19;
+  r_Client_82 4.56605e+18;
+  r_Client_88 9.55137e+18;
+  r_Client_98 4.56605e+18;
+  r_Client_99 7.93576e+18;
+  r_Client_100 1.19573e+18;
+  rCounterT1_ -1e+20;
+  r_Client_17 9.9279e+18;
+  r_Client_97 1.73785e+19;
+  r_Client_57 1.1224e+19;
+  r_Client_86 1.37172e+19;
+  r_Client_87 6.72195e+18;
+  r_Client_75 9.58955e+18;
+  r_Client_59 9.36203e+18;
+  r_Client_47 5.05685e+18;
+  r_Client_14 4.97708e+18;
+  r_Client_65 6.98811e+18;
+  r_Client_74 3.79399e+18;
+  r_Client_80 6.07839e+18;
+  r_Client_56 9.23651e+18;
+  r_Client_70 1.08492e+19;
+  r_Client_43 9.73982e+18;
+  r_Client_35 1.87093e+19;
+  r_Client_37 -3.28219e+18;
+  r_Client_41 9.73982e+18;
+  r_Client_40 1.4597e+19;
+  r_Client_38 1.4597e+19;
+  r_Client_44 6.28924e+18;
+  r_Client_71 8.20458e+18;
+  r_Client_58 9.84509e+18;
+  r_Client_77 3.79399e+18;
+  r_Client_25 9.54577e+18;
+  r_Client_48 4.99779e+18;
+  r_Client_49 5.0367e+18;
+  r_Client_20 5.0367e+18;
+  r_Client_22 2.03623e+19;
+  r_Client_51 9.90969e+18;
+  r_Client_84 9.42177e+18;
+  r_Client_85 2.80323e+18;
+  r_Client_62 2.74353e+18;
+  r_Client_67 5.68675e+18;
+  r_Client_95 2.6159e+18;
+  r_Client_92 6.07839e+18;
+  r_Client_24 5.04956e+18;
+  r_Client_89 1.25922e+19;
+  r_Client_76 1.50315e+19;
+  r_Client_18 1.09642e+19;
+  r_Client_21 5.97804e+18;
+  r_Client_23 1.49277e+19;
+  r_Client_19 1.86834e+19;
+  r_Client_64 8.45232e+18;
+  r_Client_83 6.98811e+18;
+  r_Client_91 6.07839e+18;
+  r_Client_13 5.05685e+18;
+  r_Client_10 1.49331e+19;
+  r_Client_53 2.8119e+18;
+  r_Client_78 1.40038e+19;
+  r_Client_73 2.70611e+18;
+  r_Client_79 1.47643e+19;
+  r_Client_7 1.08102e+19;
+  r_Client_5 9.71532e+18;
+  r_Client_45 5.02744e+18;
+  r_Client_2 1.48674e+19;
+  r_Client_55 7.73302e+18;
+  r_Client_68 1.00734e+19;
+  r_Client_54 7.27412e+18;
+  r_Client_96 1.2556e+19;
+  r_Client_94 1.25603e+19;
+  r_Client_90 4.31769e+18;
+  r_Client_81 5.38516e+18;
+  r_Client_61 4.93975e+18;
+  r_Client_42 4.85715e+18;
+  r_Client_39 4.85715e+18;
+  r_Client_36 1.93678e+19;
+  r_Client_72 4.46056e+18;
+  r_Client_93 1.19573e+18;
+  r_Client_50 1.45307e+19;
+  r_Client_32 5.04956e+18;
+  r_Client_34 1.30665e+19;
+  r_Client_26 1.30665e+19;
+  r_Client_28 7.40176e+18;
+  r_Client_27 2.6159e+18;
+  r_Client_29 1.08642e+19;
+  r_Client_31 1.39739e+19;
+  r_Client_30 6.07839e+18;
+  r_Client_33 4.65822e+18;
+  r_Client_63 2.6159e+18;
+}
+
+Paths = {
+  // NetworkName UnitCost Value {
+  //   [ ArcSet ] < ArcType > ( TaskName ... )
+  //   NodeName < NodeType > ( TaskName ... ) [ ResourceValue ... ]
+  //   ...
+  // }
+
+  net_ 160 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_14  ( Client_14 )  [ 35 10 ];
+    [ as ]
+    n_Client_12  ( Client_12 )  [ 64 30 ];
+    [ as ]
+    n_Client_47  ( Client_47 )  [ 70 40 ];
+    [ as ]
+    n_Client_16  ( Client_16 )  [ 75 60 ];
+    [ as ]
+    n_Client_15  ( Client_15 )  [ 77 80 ];
+    [ as ]
+    n_Client_11  ( Client_11 )  [ 83 120 ];
+    [ as ]
+    n_Client_9  ( Client_9 )  [ 91 140 ];
+    [ as ]
+    n_Client_99  ( Client_99 )  [ 107 155 ];
+    [ as ]
+    n_Client_97  ( Client_97 )  [ 134 190 ];
+    [ as ]
+    n_Client_13  ( Client_13 )  [ 151 200 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+  net_ 172 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_72  ( Client_72 )  [ 30 8 ];
+    [ as ]
+    n_Client_36  ( Client_36 )  [ 50 48 ];
+    [ as ]
+    n_Client_39  ( Client_39 )  [ 57 58 ];
+    [ as ]
+    n_Client_42  ( Client_42 )  [ 62 68 ];
+    [ as ]
+    n_Client_61  ( Client_61 )  [ 80 77 ];
+    [ as ]
+    n_Client_81  ( Client_81 )  [ 88 87 ];
+    [ as ]
+    n_Client_90  ( Client_90 )  [ 104 93 ];
+    [ as ]
+    n_Client_94  ( Client_94 )  [ 124 116 ];
+    [ as ]
+    n_Client_96  ( Client_96 )  [ 132 142 ];
+    [ as ]
+    n_Client_54  ( Client_54 )  [ 139 158 ];
+    [ as ]
+    n_Client_68  ( Client_68 )  [ 154 179 ];
+    [ as ]
+    n_Client_55  ( Client_55 )  [ 164 195 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+  net_ 141 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_71  ( Client_71 )  [ 65 14 ];
+    [ as ]
+    n_Client_44  ( Client_44 )  [ 93 24 ];
+    [ as ]
+    n_Client_40  ( Client_40 )  [ 98 54 ];
+    [ as ]
+    n_Client_38  ( Client_38 )  [ 103 84 ];
+    [ as ]
+    n_Client_41  ( Client_41 )  [ 109 104 ];
+    [ as ]
+    n_Client_37  ( Client_37 )  [ 124 114 ];
+    [ as ]
+    n_Client_35  ( Client_35 )  [ 139 134 ];
+    [ as ]
+    n_Client_43  ( Client_43 )  [ 151 154 ];
+    [ as ]
+    n_Client_70  ( Client_70 )  [ 180 177 ];
+    [ as ]
+    n_Client_100  ( Client_100 )  [ 184 180 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+  net_ 155 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_2  ( Client_2 )  [ 50 30 ];
+    [ as ]
+    n_Client_45  ( Client_45 )  [ 57 40 ];
+    [ as ]
+    n_Client_5  ( Client_5 )  [ 60 60 ];
+    [ as ]
+    n_Client_7  ( Client_7 )  [ 79 80 ];
+    [ as ]
+    n_Client_79  ( Client_79 )  [ 90 110 ];
+    [ as ]
+    n_Client_73  ( Client_73 )  [ 98 115 ];
+    [ as ]
+    n_Client_78  ( Client_78 )  [ 105 142 ];
+    [ as ]
+    n_Client_53  ( Client_53 )  [ 118 147 ];
+    [ as ]
+    n_Client_10  ( Client_10 )  [ 132 177 ];
+    [ as ]
+    n_Client_17  ( Client_17 )  [ 149 197 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+  net_ 150 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_83  ( Client_83 )  [ 35 14 ];
+    [ as ]
+    n_Client_64  ( Client_64 )  [ 53 31 ];
+    [ as ]
+    n_Client_19  ( Client_19 )  [ 73 71 ];
+    [ as ]
+    n_Client_23  ( Client_23 )  [ 79 101 ];
+    [ as ]
+    n_Client_21  ( Client_21 )  [ 81 111 ];
+    [ as ]
+    n_Client_18  ( Client_18 )  [ 87 131 ];
+    [ as ]
+    n_Client_76  ( Client_76 )  [ 104 162 ];
+    [ as ]
+    n_Client_89  ( Client_89 )  [ 144 187 ];
+    [ as ]
+    n_Client_24  ( Client_24 )  [ 174 197 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+  net_ 136 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_92  ( Client_92 )  [ 14 14 ];
+    [ as ]
+    n_Client_95  ( Client_95 )  [ 34 20 ];
+    [ as ]
+    n_Client_67  ( Client_67 )  [ 70 29 ];
+    [ as ]
+    n_Client_62  ( Client_62 )  [ 77 32 ];
+    [ as ]
+    n_Client_85  ( Client_85 )  [ 89 34 ];
+    [ as ]
+    n_Client_84  ( Client_84 )  [ 97 52 ];
+    [ as ]
+    n_Client_51  ( Client_51 )  [ 106 71 ];
+    [ as ]
+    n_Client_22  ( Client_22 )  [ 121 111 ];
+    [ as ]
+    n_Client_49  ( Client_49 )  [ 124 121 ];
+    [ as ]
+    n_Client_20  ( Client_20 )  [ 127 131 ];
+    [ as ]
+    n_Client_66  ( Client_66 )  [ 149 147 ];
+    [ as ]
+    n_Client_56  ( Client_56 )  [ 158 166 ];
+    [ as ]
+    n_Client_91  ( Client_91 )  [ 167 179 ];
+    [ as ]
+    n_Client_80  ( Client_80 )  [ 192 192 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+  net_ 192 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_65  ( Client_65 )  [ 11 16 ];
+    [ as ]
+    n_Client_52  ( Client_52 )  [ 52 19 ];
+    [ as ]
+    n_Client_59  ( Client_59 )  [ 70 38 ];
+    [ as ]
+    n_Client_75  ( Client_75 )  [ 85 54 ];
+    [ as ]
+    n_Client_87  ( Client_87 )  [ 105 67 ];
+    [ as ]
+    n_Client_86  ( Client_86 )  [ 114 95 ];
+    [ as ]
+    n_Client_57  ( Client_57 )  [ 123 118 ];
+    [ as ]
+    n_Client_74  ( Client_74 )  [ 141 126 ];
+    [ as ]
+    n_Client_58  ( Client_58 )  [ 152 146 ];
+    [ as ]
+    n_Client_77  ( Client_77 )  [ 162 153 ];
+    [ as ]
+    n_Client_25  ( Client_25 )  [ 174 173 ];
+    [ as ]
+    n_Client_48  ( Client_48 )  [ 181 183 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+  net_ 121 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_69  ( Client_69 )  [ 41 27 ];
+    [ as ]
+    n_Client_82  ( Client_82 )  [ 50 36 ];
+    [ as ]
+    n_Client_98  ( Client_98 )  [ 59 45 ];
+    [ as ]
+    n_Client_88  ( Client_88 )  [ 67 64 ];
+    [ as ]
+    n_Client_6  ( Client_6 )  [ 95 84 ];
+    [ as ]
+    n_Client_8  ( Client_8 )  [ 100 94 ];
+    [ as ]
+    n_Client_46  ( Client_46 )  [ 113 104 ];
+    [ as ]
+    n_Client_3  ( Client_3 )  [ 119 114 ];
+    [ as ]
+    n_Client_1  ( Client_1 )  [ 145 134 ];
+    [ as ]
+    n_Client_4  ( Client_4 )  [ 152 174 ];
+    [ as ]
+    n_Client_60  ( Client_60 )  [ 172 191 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+  net_ 156 1 {
+    nSrc_  [ 0 0 ];
+    [ as ]
+    n_Client_63  ( Client_63 )  [ 39 6 ];
+    [ as ]
+    n_Client_33  ( Client_33 )  [ 59 16 ];
+    [ as ]
+    n_Client_30  ( Client_30 )  [ 74 26 ];
+    [ as ]
+    n_Client_31  ( Client_31 )  [ 79 46 ];
+    [ as ]
+    n_Client_29  ( Client_29 )  [ 81 56 ];
+    [ as ]
+    n_Client_27  ( Client_27 )  [ 86 76 ];
+    [ as ]
+    n_Client_28  ( Client_28 )  [ 91 86 ];
+    [ as ]
+    n_Client_26  ( Client_26 )  [ 115 116 ];
+    [ as ]
+    n_Client_34  ( Client_34 )  [ 126 146 ];
+    [ as ]
+    n_Client_32  ( Client_32 )  [ 131 156 ];
+    [ as ]
+    n_Client_50  ( Client_50 )  [ 146 186 ];
+    [ as ]
+    n_Client_93  ( Client_93 )  [ 178 189 ];
+    [ as ]
+    nSnk_  [ 240 200 ];
+  }
+
+}
+
+};

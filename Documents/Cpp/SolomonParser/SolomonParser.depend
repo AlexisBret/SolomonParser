@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1527539733 source:c:\users\alexis\documents\cpp\solomonparser\main.cpp
+	<iostream>
+	<ProblemGeneration.h>
+	<Instance.h>
+	<LatexGraphGeneration.h>
+
+1527705098 source:c:\users\alexis\documents\cpp\solomonparser\src\problemgeneration.cpp
+	"ProblemGeneration.h"
+	<Instance.h>
+	<Node.h>
+	<iostream>
+	<fstream>
+	<string>
+
+1527519919 c:\users\alexis\documents\cpp\solomonparser\include\problemgeneration.h
+	<Instance.h>
+	<string>
+
+1527269061 source:c:\users\alexis\documents\cpp\solomonparser\src\instance.cpp
+	"Instance.h"
+	<iostream>
+	<vector>
+	<math.h>
+
+1527269016 c:\users\alexis\documents\cpp\solomonparser\include\instance.h
+	<Node.h>
+	<string>
+	<vector>
+
+1527202988 c:\users\alexis\documents\cpp\solomonparser\include\node.h
+	<string>
+	<vector>
+
+1527256797 source:c:\users\alexis\documents\cpp\solomonparser\src\node.cpp
+	"Node.h"
+	<string>
+	<sstream>
+
+1527711509 source:c:\users\alexis\documents\cpp\solomonparser\src\latexgraphgeneration.cpp
+	"LatexGraphGeneration.h"
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+
+1527699810 c:\users\alexis\documents\cpp\solomonparser\include\latexgraphgeneration.h
+	<Instance.h>
+	<vector>
+
